@@ -14,7 +14,7 @@ function beforeSubmit(event){
         alert("Please check the reCaptcha box to submit the lead");
         event.preventDefault();
     }
-
+}
     function timestamp() { 
         var response = document.getElementById("g-recaptcha-response"); 
         if (response == null || response.value.trim() == "") 
@@ -25,8 +25,7 @@ function beforeSubmit(event){
             } 
         } setInterval(timestamp, 500);
 
-        function captchasuccess(){
-            captchaChecked = true;
+        function captchaSuccess(){
+            this.captchaChecked = true;
         }
 
-    }
