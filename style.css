@@ -37,6 +37,7 @@ form{
 
 .g-recaptcha{
     margin-top: 15px;
-    justify-content: center;
+    margin-bottom: 5px;
     display: flex;
+    justify-content: center;
 }
